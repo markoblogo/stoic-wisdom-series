@@ -1,0 +1,90 @@
+{
+  "lang": "tp",
+  "meta": {
+    "title": "kulupu lipu Stoic Wisdom Series — toki pona",
+    "description": "lipu pi sona stoic li kama sin lon toki pona — sitelen pona li lon poka toki pona."
+  },
+  "header": {
+    "lang": "EN / TP"
+  },
+  "hero": {
+    "title": "sona stoic lon toki pona",
+    "subtitle": "lipu pi sona stoic li kama sin lon toki pona. nimi lili, sona pona: sitelen pona li lon poka toki pona, la lukin lipu li kama sama pali pi lukin.",
+    "buy_kindle": "lipu Kindle",
+    "buy_print": "lipu pepa",
+    "download_pdf": "o kama jo e PDF",
+    "download_epub": "o kama jo e EPUB",
+    "watch_teaser": "o lukin e sitelen tawa"
+  },
+  "why": {
+    "title": "tan seme la kulupu lipu ni li pona?",
+    "cards": {
+      "history": {
+        "title": "toki pi wawa pi sona",
+        "text": "toki pona li wile e ni: sina toki e kon taso. ni li pona tawa nasin stoic: toki lili, nasa lili, sona suli."
+      },
+      "style": {
+        "title": "lipu lili, ken lukin lon tenpo ale",
+        "text": "lipu ni li lili li pona tawa pali. sina ken lukin lili lon tenpo suno ale, li kama sin tawa toki wan, li kama sona e ona."
+      },
+      "europe": {
+        "title": "sitelen Lasina + sitelen pona",
+        "text": "toki pona li lon sitelen Lasina, li lon sitelen pona kin. wan li tawa lukin lipu; ante li pana e lukin pi nasin en pi tempo toki."
+      },
+      "discovery": {
+        "title": "kulupu wan, nasin wan",
+        "text": "kulupu lipu ni li jo e nasin wan: lukin pona, nimi pona, nasin ante ala. sina ken open lon lipu ale, anu o jo e lipu ale sama kulupu wan."
+      }
+    }
+  },
+  "collection": {
+    "title": "lipu",
+    "buy_button": "o lukin",
+    "learn_more": "o sona",
+    "marcus-meditations": {
+      "title": "lipu “Meditations” pi jan Maku — lon toki pona",
+      "author": "jan Maku",
+      "shortDesc": "lipu ni li lipu suli pi nasin stoic.",
+      "longDesc": "toki ona li kama lon toki pona, li lon sitelen Lasina en sitelen pona. sina ken lukin e toki lili lon tenpo suno ale, la pilin en lawa li kama pona."
+    },
+    "readers-kit": {
+      "title": "ilo lipu pi toki pona (lipu pi mani ala)",
+      "author": "ABVX",
+      "shortDesc": "lipu ni li pona tawa jan sin.",
+      "longDesc": "ona li pana e nasin pi lukin lipu lon toki pona, li jo kin e lipu ale pi “The Golden Verses of Pythagoras”. o kama jo e lipu, o kama sona lili, la sina ken tawa lipu pi kulupu ni."
+    }
+  },
+  "legal": {
+    "title": "lipu lawa",
+    "editorLabel": "jan lawa:",
+    "editorValue": "Anton Biletskyi-Volokh",
+    "contactLabel": "toki:",
+    "hostingLabel": "tomo ilo:",
+    "hostingValue": "Vercel",
+    "ipLabel": "ijo pi jan ante:",
+    "ipValue": "lipu en sitelen ale li tan jan lawa anu li jo e wile.",
+    "liabilityLabel": "ike:",
+    "liabilityValue": "sona ni li kama sama ni taso.",
+    "externalLinksLabel": "linja tawa tomo ante:",
+    "externalLinksValue": "Amazon, YouTube, ante.",
+    "back": "← o tawa pini"
+  },
+  "privacy": {
+    "title": "nasin len",
+    "dataLabel": "sona:",
+    "dataValue": "tomo lipu ni li alasa ala e sona pi jan.",
+    "cookiesLabel": "kuki:",
+    "cookiesValue": "kuki pi sona lukin ala. taso sitelen tawa YouTube li ken pana e kuki.",
+    "thirdPartyLabel": "ilo pi jan ante:",
+    "thirdPartyValue": "YouTube, Amazon, ante.",
+    "rightsLabel": "wile sina:",
+    "rightsValue": "sina wile sona la, o toki tawa mi.",
+    "contactLabel": "toki:",
+    "contactValue": "a.biletskyi@gmail.com",
+    "back": "← o tawa pini"
+  },
+  "footer": {
+    "copyright": "© 2026 ABVX.xyz",
+    "back_home": "← o tawa tomo"
+  }
+}

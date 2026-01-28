@@ -1,0 +1,90 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Stoic Wisdom Series — Toki Pona",
+    "description": "Classic Stoic texts reimagined in the world’s simplest language — with sitelen pona alongside toki pona."
+  },
+  "header": {
+    "lang": "EN / TP"
+  },
+  "hero": {
+    "title": "Stoic Wisdom in Toki Pona",
+    "subtitle": "Classic Stoic texts reimagined in the world’s simplest language. Minimal words, clear ideas — with sitelen pona alongside toki pona to make reading feel like a visual practice.",
+    "buy_kindle": "Kindle edition",
+    "buy_print": "Paperback",
+    "download_pdf": "Download PDF",
+    "download_epub": "Download EPUB",
+    "watch_teaser": "Watch teaser"
+  },
+  "why": {
+    "title": "Why this series?",
+    "cards": {
+      "history": {
+        "title": "A language built for clarity",
+        "text": "Toki pona forces you to say the essence. That constraint fits Stoicism: fewer claims, less noise, more control over meaning."
+      },
+      "style": {
+        "title": "Stoicism in small, readable pieces",
+        "text": "These books are short, practical, and aphoristic. You can read them slowly, revisit passages, and use them as daily prompts."
+      },
+      "europe": {
+        "title": "Latin script + sitelen pona",
+        "text": "Each text is available in Latin toki pona and sitelen pona. One is for reading, the other is for seeing structure and rhythm."
+      },
+      "discovery": {
+        "title": "A coherent set, not random books",
+        "text": "Same visual style, same reading approach, consistent vocabulary choices. You can start anywhere — or collect the full set as one project."
+      }
+    }
+  },
+  "collection": {
+    "title": "Books",
+    "buy_button": "View",
+    "learn_more": "Learn more",
+    "marcus-meditations": {
+      "title": "Meditations of Marcus Aurelius — in Toki Pona",
+      "author": "Marcus Aurelius",
+      "shortDesc": "A minimalist Stoic classic, reimagined through toki pona.",
+      "longDesc": "Each passage is rendered in Latin toki pona and mirrored in sitelen pona, turning daily reflection into a clean, low-noise reading practice. If you want one book that defines the whole series, start here."
+    },
+    "readers-kit": {
+      "title": "The Toki Pona Reader’s Kit (Free PDF)",
+      "author": "ABVX",
+      "shortDesc": "A beginner-friendly entry point into reading toki pona with philosophical texts — plus the full practice text: The Golden Verses of Pythagoras.",
+      "longDesc": "Download it, learn the cues, and use it as your fast start before diving into the series."
+    }
+  },
+  "legal": {
+    "title": "Legal notice",
+    "editorLabel": "Editor:",
+    "editorValue": "Anton Biletskyi-Volokh (France)",
+    "contactLabel": "Contact:",
+    "hostingLabel": "Hosting:",
+    "hostingValue": "Standard web hosting (Vercel)",
+    "ipLabel": "Intellectual property:",
+    "ipValue": "All texts and visuals are owned by the publisher or used with permission.",
+    "liabilityLabel": "Liability:",
+    "liabilityValue": "Information provided as-is.",
+    "externalLinksLabel": "External links:",
+    "externalLinksValue": "Links to third-party websites (Amazon, YouTube, etc.).",
+    "back": "← Back"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "dataLabel": "Data:",
+    "dataValue": "This website does not collect personal data by default.",
+    "cookiesLabel": "Cookies:",
+    "cookiesValue": "No analytics cookies. Embedded content (e.g. YouTube) may set cookies when played.",
+    "thirdPartyLabel": "Third-party services:",
+    "thirdPartyValue": "YouTube, Amazon, etc.",
+    "rightsLabel": "Your rights:",
+    "rightsValue": "Contact us for any privacy questions.",
+    "contactLabel": "Contact:",
+    "contactValue": "a.biletskyi@gmail.com",
+    "back": "← Back"
+  },
+  "footer": {
+    "copyright": "© 2026 ABVX.xyz",
+    "back_home": "← Back to home"
+  }
+}
