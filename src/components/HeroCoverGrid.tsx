@@ -15,13 +15,10 @@ interface HeroCoverGridProps {
 }
 
 // Staircase configuration for Desktop
-// Index 0 is front-most/lowest. Index 4 is back-most/highest.
+// For this landing we start with 2 books.
 const STACK_TRANSFORMS = [
-    { x: 0, y: 160, r: -3, z: 10 },    // Front (Khvylovy)
-    { x: 70, y: 120, r: 2, z: 9 },      // 2nd
-    { x: 140, y: 80, r: -2, z: 8 },     // 3rd
-    { x: 210, y: 40, r: 1, z: 7 },      // 4th
-    { x: 280, y: 0, r: 4, z: 6 },       // 5th (Gift/Last) - Back
+    { x: 0, y: 120, r: -2, z: 10 },     // Front
+    { x: 90, y: 20, r: 3, z: 9 },       // Back
 ];
 
 export default function HeroCoverGrid({ books, onSelect, lang }: HeroCoverGridProps) {
