@@ -25,6 +25,7 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
     const author = localizedBook?.author || book.author[lang as keyof typeof book.author] || book.author.en;
     const shortDesc = localizedBook?.shortDesc || book.shortDescription[lang as keyof typeof book.shortDescription] || book.shortDescription.en;
     const longDesc = localizedBook?.longDesc || book.longDescription[lang as keyof typeof book.longDescription] || book.longDescription.en;
+    const linkLine = localizedBook?.linkLine as string | undefined;
 
     const isGift = book.type === 'gift';
 
@@ -63,6 +64,13 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
                         {/* Render full text immediately */}
                         <p>{shortDesc}</p>
                         <p className={styles.longDesc}>{longDesc}</p>
+                        {linkLine && (
+                            <p className={styles.longDesc} style={{ marginTop: '0.75rem' }}>
+                                <a href={book.downloadPdfUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>
+                                    {linkLine}
+                                </a>
+                            </p>
+                        )}
                     </div>
 
                     <div className={styles.actions}>
