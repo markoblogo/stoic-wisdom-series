@@ -3,6 +3,27 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
+function TranslatorBanner() {
+  return (
+    <a
+      href="https://toki.abvx.xyz/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block rounded-2xl border border-[#E5E7EB] bg-white px-6 py-5 shadow-sm transition hover:border-[#D1D5DB] hover:shadow"
+    >
+      <div className="flex items-start gap-3">
+        <span className="text-[#22C55E] text-2xl font-bold leading-none">&gt;</span>
+        <div>
+          <div className="text-lg font-semibold leading-tight text-[#111827]">Toki Pona Translator</div>
+          <div className="mt-1 text-sm leading-relaxed text-[#6B7280]">
+            Type in any language. Get Toki Pona in Latin, sitelen pona, or emoji.
+          </div>
+        </div>
+      </div>
+    </a>
+  );
+}
+
 export default function Footer({ dict, lang }: { dict: any, lang: 'en' | 'tp' }) {
   const socialMedium = 'https://abvcreative.medium.com/';
   const socialSubstack = 'https://abvx.substack.com/';
@@ -50,7 +71,9 @@ export default function Footer({ dict, lang }: { dict: any, lang: 'en' | 'tp' })
             </div>
           </div>
 
-          <div className={styles.rightCol} />
+          <div className={styles.rightCol}>
+            <TranslatorBanner />
+          </div>
         </div>
       </div>
     </footer>
