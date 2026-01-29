@@ -165,21 +165,13 @@
     margin-top: 1px;
 }
 
-.bannerPreview {
-    display: block;
-    width: 100%;
-    height: 86px;
-    border-radius: 14px;
+.bannerThumb {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
     object-fit: cover;
-    object-position: center;
-}
-
-.banner_kit .bannerPreview {
-    object-position: center left;
-}
-
-.banner_ukr .bannerPreview {
-    object-position: center right;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.10);
 }
 
 .bannerTitle {

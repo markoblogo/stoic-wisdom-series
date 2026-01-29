@@ -11,10 +11,10 @@ type BannerProps = {
   subtitle: string;
   variant: BannerVariant;
   iconText?: string;
-  previewSrc?: string;
+  thumbSrc?: string;
 };
 
-function Banner({ href, title, subtitle, variant, iconText = '>' , previewSrc }: BannerProps) {
+function Banner({ href, title, subtitle, variant, iconText = '>', thumbSrc }: BannerProps) {
   return (
     <a
       href={href}
@@ -22,17 +22,18 @@ function Banner({ href, title, subtitle, variant, iconText = '>' , previewSrc }:
       rel="noopener noreferrer"
       className={`${styles.bannerCard} ${styles[`banner_${variant}`]}`}
     >
-      {previewSrc ? (
-        <img src={previewSrc} alt="" className={styles.bannerPreview} loading="lazy" />
-      ) : (
-        <div className={styles.bannerInner}>
+      <div className={styles.bannerInner}>
+        {thumbSrc ? (
+          <img src={thumbSrc} alt="" className={styles.bannerThumb} loading="lazy" />
+        ) : (
           <span className={styles.bannerIcon}>{iconText}</span>
-          <div className={styles.bannerText}>
-            <div className={styles.bannerTitle}>{title}</div>
-            <div className={styles.bannerSubtitle}>{subtitle}</div>
-          </div>
+        )}
+
+        <div className={styles.bannerText}>
+          <div className={styles.bannerTitle}>{title}</div>
+          <div className={styles.bannerSubtitle}>{subtitle}</div>
         </div>
-      )}
+      </div>
     </a>
   );
 }
@@ -101,14 +102,14 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
                 href="https://toki.abvx.xyz/kit"
                 title="The Toki Pona Reader’s Kit"
                 subtitle="Beginner-friendly entry point into reading toki pona (includes Pythagoras full text)."
-                previewSrc="/banners/toki-kit.png"
+                thumbSrc="/assets/books/readers-kit/cover.jpg"
               />
               <Banner
                 variant="ukr"
                 href="https://ukrmodernism.abvx.xyz/fr"
                 title="Ukrainian Modernism"
                 subtitle="Ukrainian modernist novels — translated into French."
-                previewSrc="/banners/ukrmodernism.png"
+                iconText="M"
               />
             </div>
           </div>
