@@ -3,30 +3,31 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
-function TranslatorBanner() {
+type BannerProps = {
+  href: string;
+  title: string;
+  subtitle: string;
+  iconText?: string;
+  badgeText?: string;
+};
+
+function Banner({ href, title, subtitle, iconText = '>', badgeText }: BannerProps) {
   return (
-    <a
-      href="https://toki.abvx.xyz/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group block rounded-2xl border border-[#E5E7EB] bg-white px-6 py-5 shadow-sm transition hover:border-[#D1D5DB] hover:shadow"
-    >
-      <div className="flex items-start gap-3">
-        <span className="text-[#22C55E] text-2xl font-bold leading-none">&gt;</span>
-        <div>
-          <div className="text-lg font-semibold leading-tight text-[#111827]">Toki Pona Translator</div>
-          <div className="mt-1 text-sm leading-relaxed text-[#6B7280]">
-            Type in any language. Get Toki Pona in Latin, sitelen pona, or emoji.
-          </div>
-        </div>
+    <a href={href} target="_blank" rel="noopener noreferrer" className={styles.bannerCard}>
+      <div className={styles.bannerHeader}>
+        <span className={styles.bannerIcon}>{iconText}</span>
+        {badgeText && <span className={styles.bannerBadge}>{badgeText}</span>}
       </div>
+      <div className={styles.bannerTitle}>{title}</div>
+      <div className={styles.bannerSubtitle}>{subtitle}</div>
     </a>
   );
 }
 
-export default function Footer({ dict, lang }: { dict: any, lang: 'en' | 'tp' }) {
+export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' }) {
   const socialMedium = 'https://abvcreative.medium.com/';
   const socialSubstack = 'https://abvx.substack.com/';
+  const socialGitHub = 'https://github.com/markoblogo';
   const mailto = 'mailto:a.biletskyi@gmail.com?subject=Stoic%20Wisdom%20Series';
   const emailDisplay = 'a.biletskyi@gmail.com';
 
@@ -47,6 +48,9 @@ export default function Footer({ dict, lang }: { dict: any, lang: 'en' | 'tp' })
                 </a>
                 <a href={socialSubstack} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                   {dict?.contact?.social_substack ?? 'Substack'}
+                </a>
+                <a href={socialGitHub} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                  GitHub
                 </a>
               </div>
             </div>
@@ -72,7 +76,25 @@ export default function Footer({ dict, lang }: { dict: any, lang: 'en' | 'tp' })
           </div>
 
           <div className={styles.rightCol}>
-            <TranslatorBanner />
+            <div className={styles.banners}>
+              <Banner
+                href="https://toki.abvx.xyz/"
+                title="Toki Pona Translator"
+                subtitle="Type in any language. Get Toki Pona in Latin, sitelen pona, or emoji."
+              />
+              <Banner
+                href="https://toki.abvx.xyz/kit"
+                title="The Toki Pona Reader’s Kit"
+                subtitle="A free beginner-friendly guide — includes The Golden Verses of Pythagoras (full text)."
+                badgeText="FREE"
+              />
+              <Banner
+                href="https://ukrmodernism.abvx.xyz/fr"
+                title="Ukrainian Modernism"
+                subtitle="A collection of Ukrainian modernist novels — translated into French."
+                iconText="✶"
+              />
+            </div>
           </div>
         </div>
       </div>

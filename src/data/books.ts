@@ -53,8 +53,8 @@ export const books: Book[] = [
             tp: "ilo lipu pi toki pona (lipu pi mani ala)"
         },
         author: {
-            en: "ABVX",
-            tp: "ABVX"
+            en: "ABV & Pythagoras",
+            tp: "ABV en jan Pitakola"
         },
         coverImage: "/assets/books/readers-kit/cover.jpg",
         promoImage: "/assets/books/readers-kit/promo.jpg",
