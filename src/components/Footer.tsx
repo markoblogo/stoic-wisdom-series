@@ -3,23 +3,37 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
+type BannerVariant = 'translator' | 'kit' | 'ukr';
+
 type BannerProps = {
   href: string;
   title: string;
   subtitle: string;
+  variant: BannerVariant;
   iconText?: string;
-  badgeText?: string;
+  thumbSrc?: string;
 };
 
-function Banner({ href, title, subtitle, iconText = '>', badgeText }: BannerProps) {
+function Banner({ href, title, subtitle, variant, iconText = '>', thumbSrc }: BannerProps) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={styles.bannerCard}>
-      <div className={styles.bannerHeader}>
-        <span className={styles.bannerIcon}>{iconText}</span>
-        {badgeText && <span className={styles.bannerBadge}>{badgeText}</span>}
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${styles.bannerCard} ${styles[`banner_${variant}`]}`}
+    >
+      <div className={styles.bannerInner}>
+        {thumbSrc ? (
+          <img src={thumbSrc} alt="" className={styles.bannerThumb} loading="lazy" />
+        ) : (
+          <span className={styles.bannerIcon}>{iconText}</span>
+        )}
+
+        <div className={styles.bannerText}>
+          <div className={styles.bannerTitle}>{title}</div>
+          <div className={styles.bannerSubtitle}>{subtitle}</div>
+        </div>
       </div>
-      <div className={styles.bannerTitle}>{title}</div>
-      <div className={styles.bannerSubtitle}>{subtitle}</div>
     </a>
   );
 }
@@ -78,21 +92,24 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
           <div className={styles.rightCol}>
             <div className={styles.banners}>
               <Banner
+                variant="translator"
                 href="https://toki.abvx.xyz/"
                 title="Toki Pona Translator"
                 subtitle="Type in any language. Get Toki Pona in Latin, sitelen pona, or emoji."
               />
               <Banner
+                variant="kit"
                 href="https://toki.abvx.xyz/kit"
                 title="The Toki Pona Reader’s Kit"
-                subtitle="A free beginner-friendly guide — includes The Golden Verses of Pythagoras (full text)."
-                badgeText="FREE"
+                subtitle="Beginner-friendly entry point into reading toki pona (includes Pythagoras full text)."
+                thumbSrc="/assets/books/readers-kit/cover.jpg"
               />
               <Banner
+                variant="ukr"
                 href="https://ukrmodernism.abvx.xyz/fr"
                 title="Ukrainian Modernism"
-                subtitle="A collection of Ukrainian modernist novels — translated into French."
-                iconText="✶"
+                subtitle="Ukrainian modernist novels — translated into French."
+                iconText="M"
               />
             </div>
           </div>
