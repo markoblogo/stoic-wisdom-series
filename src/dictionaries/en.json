@@ -84,8 +84,15 @@
     "contactValue": "a.biletskyi@gmail.com",
     "back": "← Back"
   },
+  "contact": {
+    "text": "Contact",
+    "social_medium": "Medium",
+    "social_substack": "Substack"
+  },
   "footer": {
     "copyright": "© 2026 ABVX.xyz",
+    "legal_mentions": "Legal",
+    "privacy_policy": "Privacy",
     "back_home": "← Back to home"
   }
 }

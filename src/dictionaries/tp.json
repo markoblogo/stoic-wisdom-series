@@ -84,8 +84,15 @@
     "contactValue": "a.biletskyi@gmail.com",
     "back": "← o tawa pini"
   },
+  "contact": {
+    "text": "toki",
+    "social_medium": "Medium",
+    "social_substack": "Substack"
+  },
   "footer": {
     "copyright": "© 2026 ABVX.xyz",
+    "legal_mentions": "lipu lawa",
+    "privacy_policy": "nasin len",
     "back_home": "← o tawa tomo"
   }
 }
