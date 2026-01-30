@@ -3,6 +3,12 @@ export interface LocalizedString {
     tp: string;
 }
 
+export interface BookIdentifiers {
+    asinKindle?: string;
+    asinPrint?: string;
+    isbn13Print?: string;
+}
+
 export interface Book {
     id: string; // The slug (folder name)
     type: 'commercial' | 'gift';
@@ -17,6 +23,8 @@ export interface Book {
     teaserVideoId?: string;
     shortDescription: LocalizedString;
     longDescription: LocalizedString;
+
+    identifiers?: BookIdentifiers;
 }
 
 export const books: Book[] = [
@@ -35,13 +43,18 @@ export const books: Book[] = [
         promoImage: "/assets/books/marcus-meditations/promo.webp",
         amazonKindleUrl: "https://www.amazon.com/dp/B0FV3F1RC5",
         amazonPrintUrl: "https://www.amazon.com/dp/B0FVLPD69K",
+        identifiers: {
+            asinKindle: 'B0FV3F1RC5',
+            asinPrint: 'B0FVLPD69K',
+            isbn13Print: '979-8268811124',
+        },
         teaserVideoId: "ILN2qILESH0",
         shortDescription: {
-            en: "A minimalist Stoic classic, reimagined through toki pona.",
+            en: "A minimalist Stoic classic, reimagined in the world’s simplest language.",
             tp: "lipu ni li lipu suli pi nasin stoic."
         },
         longDescription: {
-            en: "What happens when ancient Stoic wisdom meets the world’s simplest language? This edition invites readers to rediscover Marcus Aurelius through the lens of Toki Pona — built on simplicity, clarity, and harmony. Each passage is carefully rendered in Toki Pona and mirrored in sitelen pona. Includes the full translation, an introduction, and a glossary/reading guide.",
+            en: "What happens when ancient Stoic wisdom meets the world’s simplest language? “Meditations of Marcus Aurelius — in Toki Pona” invites readers to rediscover the timeless reflections of the Roman emperor through the lens of Toki Pona — a constructed language built on simplicity, clarity, and harmony. Each passage is carefully rendered in Toki Pona and mirrored in sitelen pona. This edition includes the full translation, an introduction, and a glossary/reading guide.",
             tp: "toki ona li kama lon toki pona, li lon sitelen Lasina en sitelen pona. sina ken lukin e toki lili lon tenpo suno ale, la pilin en lawa li kama pona."
         }
     },
