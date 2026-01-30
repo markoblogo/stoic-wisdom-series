@@ -3,6 +3,7 @@
 [![Live](https://img.shields.io/badge/Live-stoic.abvx.xyz-2ea44f)](https://stoic.abvx.xyz)
 ![Next.js](https://img.shields.io/badge/Next.js-App%20Router-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## Live
 https://stoic.abvx.xyz
