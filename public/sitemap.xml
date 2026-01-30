@@ -16,4 +16,38 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://stoic.abvx.xyz/en/legal</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/legal"/>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://stoic.abvx.xyz/tp/legal</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/legal"/>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://stoic.abvx.xyz/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/privacy"/>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://stoic.abvx.xyz/tp/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/privacy"/>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
 </urlset>
