@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
-type BannerVariant = 'translator' | 'kit' | 'ukr';
+type BannerVariant = 'translator' | 'learn' | 'kit' | 'ukr';
 
 type BannerProps = {
   href: string;
@@ -95,21 +95,21 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
                 variant="translator"
                 href="https://toki.abvx.xyz/"
                 title="Toki Pona Translator"
-                subtitle="Type in any language. Get Toki Pona in Latin, sitelen pona, or emoji."
+                subtitle="Translate into toki pona (Latin / sitelen pona / emoji)."
+              />
+              <Banner
+                variant="learn"
+                href="https://toki.abvx.xyz/learn"
+                title="Learn Toki Pona"
+                subtitle="Curated resources + books + the Reader’s Kit."
+                iconText=">"
               />
               <Banner
                 variant="kit"
                 href="https://toki.abvx.xyz/kit"
                 title="The Toki Pona Reader’s Kit"
-                subtitle="Beginner-friendly entry point into reading toki pona (includes Pythagoras full text)."
+                subtitle="Free PDF: fast start into reading toki pona (includes Pythagoras full text)."
                 thumbSrc="/assets/books/readers-kit/cover.jpg"
-              />
-              <Banner
-                variant="ukr"
-                href="https://ukrmodernism.abvx.xyz/fr"
-                title="Ukrainian Modernism"
-                subtitle="Ukrainian modernist novels — translated into French."
-                iconText="M"
               />
             </div>
           </div>

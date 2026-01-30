@@ -200,6 +200,14 @@
     color: #22C55E;
 }
 
+.banner_learn {
+    background: #f3fbf6;
+}
+
+.banner_learn .bannerIcon {
+    color: #22C55E;
+}
+
 .banner_kit {
     background: #f6f3ee;
 }
