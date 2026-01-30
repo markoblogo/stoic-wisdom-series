@@ -2,6 +2,7 @@
 
 import BookSection from './BookSection';
 import { books } from '@/data/books';
+import MoreBooks from './MoreBooks';
 
 export default function BookList({ dict }: { dict: any }) {
     // Sort logic: commercial first, then gift
@@ -18,9 +19,12 @@ export default function BookList({ dict }: { dict: any }) {
                     key={book.id}
                     book={book}
                     dict={dict}
-                    isLast={index === sortedBooks.length - 1}
+                    isLast={false}
                 />
             ))}
+
+            {/* After the Reader’s Kit block: more books by the author (not part of the Stoic series) */}
+            <MoreBooks dict={dict} />
         </div>
     );
 }
