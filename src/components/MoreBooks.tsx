@@ -53,7 +53,7 @@ const BOOKS: MoreBook[] = [
 
 export default function MoreBooks({ dict }: { dict: any }) {
   return (
-    <section className={styles.section}>
+    <section id="more-books" className={styles.section}>
       <div className="container">
         <div className={styles.heading}>
           <h2 className={styles.title}>{dict?.moreBooks?.title ?? 'More books about toki pona'}</h2>

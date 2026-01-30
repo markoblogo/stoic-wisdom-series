@@ -18,10 +18,16 @@ export default function Header({ lang }: { lang: 'en' | 'tp' }) {
           <a className={styles.navLink} href="https://toki.abvx.xyz/">
             Translator
           </a>
+          <a className={styles.navLink} href="https://toki.abvx.xyz/learn">
+            Learn
+          </a>
           <a className={styles.navLink} href="https://toki.abvx.xyz/kit">
             Kit
           </a>
-          <a className={`${styles.navLink} ${styles.navLinkActive}`} href="https://stoic.abvx.xyz/en">
+          <a className={styles.navLink} href={`${stoicHref}#more-books`}>
+            More books
+          </a>
+          <a className={`${styles.navLink} ${styles.navLinkActive}`} href={stoicHref}>
             Toki Stoic
           </a>
         </nav>
