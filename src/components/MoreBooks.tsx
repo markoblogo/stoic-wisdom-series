@@ -1,5 +1,8 @@
 'use client';
 
+import Image from 'next/image';
+import styles from './MoreBooks.module.css';
+
 type MoreBook = {
   id: string;
   title: string;
@@ -36,7 +39,8 @@ const BOOKS: MoreBook[] = [
   },
   {
     id: 'machine',
-    title: 'Toki Pona and the Machine Mind: Designing cleaner prompts, smaller models, and better systems with the world’s simplest language',
+    title:
+      'Toki Pona and the Machine Mind: Designing cleaner prompts, smaller models, and better systems with the world’s simplest language',
     subtitle: 'Designing cleaner prompts, smaller models, and better systems',
     description:
       'A practical field guide: prompt compression, constrained DSLs, and predictable AI interfaces inspired by toki pona and its visual scripts.',
@@ -49,98 +53,49 @@ const BOOKS: MoreBook[] = [
 
 export default function MoreBooks({ dict }: { dict: any }) {
   return (
-    <section style={{ marginTop: '36px' }}>
+    <section className={styles.section}>
       <div className="container">
-        <h2 style={{ fontSize: '1.35rem', fontWeight: 700, marginBottom: 8 }}>
-          {dict?.moreBooks?.title ?? 'More books about toki pona'}
-        </h2>
-        <p style={{ color: 'rgba(0,0,0,0.65)', marginTop: 0, marginBottom: 18 }}>
-          {dict?.moreBooks?.subtitle ?? 'Not part of the Stoic series — other editions by the author.'}
-        </p>
-
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
-            gap: 14,
-          }}
-        >
-          {BOOKS.map((b) => (
-            <div
-              key={b.id}
-              style={{
-                borderRadius: 18,
-                border: '1px solid rgba(0,0,0,0.10)',
-                background: 'white',
-                overflow: 'hidden',
-                boxShadow: '0 18px 60px rgba(15, 23, 42, 0.08)',
-                transition: 'transform 180ms ease, box-shadow 180ms ease',
-              }}
-              className="more-book-card"
-            >
-              <div style={{ padding: 18 }}>
-                <div style={{ fontSize: 11, letterSpacing: 0.8, fontWeight: 700, color: '#22C55E' }}>
-                  BOOK
-                </div>
-                <div style={{ fontSize: 18, fontWeight: 700, marginTop: 6 }}>{b.title}</div>
-                <div style={{ fontSize: 13, color: 'rgba(0,0,0,0.60)', marginTop: 6 }}>{b.subtitle}</div>
-                <div style={{ fontSize: 13, color: 'rgba(0,0,0,0.78)', marginTop: 10, lineHeight: 1.5 }}>
-                  {b.description}
-                </div>
-
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 14 }}>
-                  <a href={b.kindleUrl} target="_blank" rel="noopener noreferrer" style={pill(false)}>
-                    Kindle
-                  </a>
-                  <a href={b.paperbackUrl} target="_blank" rel="noopener noreferrer" style={pill(false)}>
-                    Paperback
-                  </a>
-                  <a href={b.teaserUrl} target="_blank" rel="noopener noreferrer" style={pill(true)}>
-                    Teaser
-                  </a>
-                </div>
-              </div>
-
-              <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
-                <img src={b.promoSrc} alt="" loading="lazy" style={{ width: '100%', height: 150, objectFit: 'cover' }} />
-              </div>
-            </div>
-          ))}
+        <div className={styles.heading}>
+          <h2 className={styles.title}>{dict?.moreBooks?.title ?? 'More books about toki pona'}</h2>
+          <p className={styles.subtitle}>
+            {dict?.moreBooks?.subtitle ?? 'Not part of the Stoic series — other editions by the author.'}
+          </p>
         </div>
 
-        <style jsx>{`
-          @media (max-width: 880px) {
-            .more-book-card {
-              transform: none !important;
-            }
-            section > .container > div {
-              grid-template-columns: 1fr !important;
-            }
-          }
-          .more-book-card:hover {
-            transform: translateY(-2px) scale(1.02);
-            box-shadow: 0 28px 90px rgba(15, 23, 42, 0.14);
-            position: relative;
-            z-index: 5;
-          }
-        `}</style>
+        <div className={styles.grid}>
+          {BOOKS.map((b) => (
+            <article key={b.id} className={styles.card}>
+              <div className={styles.inner}>
+                <div className={styles.media}>
+                  <Image src={b.promoSrc} alt={`Promo for ${b.title}`} fill className={styles.promoImg} sizes="(max-width: 900px) 100vw, 50vw" />
+                </div>
+
+                <div className={styles.content}>
+                  <div className={styles.kicker}>BOOK</div>
+                  <h3 className={styles.bookTitle}>{b.title}</h3>
+                  <div className={styles.bookSubtitle}>{b.subtitle}</div>
+                  <p className={styles.desc}>{b.description}</p>
+
+                  <div className={styles.actions}>
+                    <div className={styles.ctas}>
+                      <a href={b.kindleUrl} target="_blank" rel="noopener" className={`btn btn-accent ${styles.btnCompact}`}>
+                        {dict?.hero?.buy_kindle ?? 'KINDLE EDITION'}
+                      </a>
+                      <a href={b.paperbackUrl} target="_blank" rel="noopener" className={`btn ${styles.btnCompact}`}>
+                        {dict?.hero?.buy_print ?? 'PAPERBACK'}
+                      </a>
+                    </div>
+
+                    <a href={b.teaserUrl} target="_blank" rel="noopener" className={styles.teaser}>
+                      ▶ {dict?.hero?.watch_teaser ?? 'Watch teaser'}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
-}
-
-function pill(active: boolean): React.CSSProperties {
-  return {
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '8px 12px',
-    borderRadius: 999,
-    fontSize: 13,
-    fontWeight: 600,
-    textDecoration: 'none',
-    border: active ? '1px solid rgba(34,197,94,0.8)' : '1px solid rgba(0,0,0,0.16)',
-    background: active ? 'rgba(34,197,94,0.10)' : 'white',
-    color: 'rgba(0,0,0,0.78)',
-  };
 }
