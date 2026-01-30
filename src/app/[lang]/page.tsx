@@ -7,6 +7,7 @@ import BookList from '@/components/BookList';
 import Footer from '@/components/Footer';
 import styles from './page.module.css';
 import { books } from '@/data/books';
+import { moreBooks } from '@/data/moreBooks';
 import { orgJsonLd, seriesJsonLd, websiteJsonLd, jsonLdForBook } from '@/lib/jsonld';
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
@@ -16,7 +17,13 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
   const graph = {
     '@context': 'https://schema.org',
-    '@graph': [orgJsonLd(), websiteJsonLd(validLang), seriesJsonLd(validLang), ...books.map((b) => jsonLdForBook(validLang, b))],
+    '@graph': [
+      orgJsonLd(),
+      websiteJsonLd(validLang),
+      seriesJsonLd(validLang),
+      ...books.map((b) => jsonLdForBook(validLang, b)),
+      ...moreBooks.map((b) => jsonLdForBook(validLang, b)),
+    ],
   };
 
   return (
