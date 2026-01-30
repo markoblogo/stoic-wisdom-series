@@ -8,6 +8,8 @@
 ## Live
 https://stoic.abvx.xyz
 
+**License:** MIT. See [LICENSE](LICENSE).
+
 Bilingual landing page (**English / toki pona**) for the *Stoic Wisdom Series*: classic Stoic texts reimagined in **toki pona**, with **sitelen pona** alongside Latin script.
 
 Current catalog on the landing:
