@@ -31,8 +31,8 @@ export const books: Book[] = [
             en: "Marcus Aurelius",
             tp: "jan Makusi Ojeliju"
         },
-        coverImage: "/assets/books/marcus-meditations/cover.jpg",
-        promoImage: "/assets/books/marcus-meditations/promo.jpg",
+        coverImage: "/assets/books/marcus-meditations/cover.webp",
+        promoImage: "/assets/books/marcus-meditations/promo.webp",
         amazonKindleUrl: "https://www.amazon.com/dp/B0FV3F1RC5",
         amazonPrintUrl: "https://www.amazon.com/dp/B0FVLPD69K",
         teaserVideoId: "ILN2qILESH0",
@@ -41,7 +41,7 @@ export const books: Book[] = [
             tp: "lipu ni li lipu suli pi nasin stoic."
         },
         longDescription: {
-            en: "Each passage is rendered in Latin toki pona and mirrored in sitelen pona, turning daily reflection into a clean, low-noise reading practice. If you want one book that defines the whole series, start here.",
+            en: "What happens when ancient Stoic wisdom meets the world’s simplest language? This edition invites readers to rediscover Marcus Aurelius through the lens of Toki Pona — built on simplicity, clarity, and harmony. Each passage is carefully rendered in Toki Pona and mirrored in sitelen pona. Includes the full translation, an introduction, and a glossary/reading guide.",
             tp: "toki ona li kama lon toki pona, li lon sitelen Lasina en sitelen pona. sina ken lukin e toki lili lon tenpo suno ale, la pilin en lawa li kama pona."
         }
     },
@@ -56,8 +56,8 @@ export const books: Book[] = [
             en: "ABV & Pythagoras",
             tp: "ABV en jan Pitakola"
         },
-        coverImage: "/assets/books/readers-kit/cover.jpg",
-        promoImage: "/assets/books/readers-kit/promo.jpg",
+        coverImage: "/assets/books/readers-kit/cover.webp",
+        promoImage: "/assets/books/readers-kit/promo.webp",
         downloadPdfUrl: "https://toki.abvx.xyz/kit.pdf",
         teaserVideoId: "F7fSBElppzI",
         shortDescription: {
