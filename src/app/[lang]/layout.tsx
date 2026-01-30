@@ -17,24 +17,27 @@ const playfair = Playfair_Display({
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    const dict = await getDictionary(lang as 'en' | 'tp');
+    const safeLang = (lang === 'tp' || lang === 'en') ? (lang as 'en' | 'tp') : 'en';
+    const dict = await getDictionary(safeLang);
 
     return {
         title: dict.meta.title,
         description: dict.meta.description,
         alternates: {
-            canonical: `https://stoic.abvx.xyz/${lang}`,
+            canonical: `https://stoic.abvx.xyz/${safeLang}`,
             languages: {
-                'en': 'https://stoic.abvx.xyz/en',
-                'tp': 'https://stoic.abvx.xyz/tp',
+                en: 'https://stoic.abvx.xyz/en',
+                // NOTE: Next Metadata typing only allows specific hreflang codes.
+                // We keep route /tp but cast key to avoid TS error; this renders hreflang="tok".
+                ['tok' as any]: 'https://stoic.abvx.xyz/tp',
             } as any,
         },
         openGraph: {
             title: dict.meta.title,
             description: dict.meta.description,
-            url: `https://stoic.abvx.xyz/${lang}`,
+            url: `https://stoic.abvx.xyz/${safeLang}`,
             siteName: 'Stoic Wisdom Series',
-            locale: lang === 'tp' ? 'en_US' : 'en_US',
+            locale: safeLang === 'tp' ? 'en_US' : 'en_US',
             type: 'website',
             images: [
                 {
@@ -66,8 +69,9 @@ export default async function RootLayout({
     params: Promise<{ lang: string }>;
 }) {
     const { lang } = await params;
+    const safeLang = (lang === 'tp' || lang === 'en') ? (lang as 'en' | 'tp') : 'en';
     return (
-        <html lang={lang} className={`${inter.variable} ${playfair.variable}`}>
+        <html lang={safeLang === 'tp' ? 'tok' : 'en'} className={`${inter.variable} ${playfair.variable}`}>
             <body>{children}</body>
         </html>
     );
