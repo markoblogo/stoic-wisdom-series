@@ -1,28 +1,31 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-let locales = ["en", "tp"];
-let defaultLocale = "en";
+const locales = ['en', 'tp'] as const;
+const defaultLocale = 'en';
 
 export function middleware(request: NextRequest) {
-    // Check if there is any supported locale in the pathname
-    const { pathname } = request.nextUrl;
-    const pathnameHasLocale = locales.some(
-        (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-    );
+  const { pathname } = request.nextUrl;
 
-    if (pathnameHasLocale) return;
+  // Do not locale-redirect static files (robots/sitemap/images/etc.).
+  // Any pathname containing a dot is treated as a file path.
+  if (pathname.includes('.')) {
+    return NextResponse.next();
+  }
 
-    // Redirect if there is no locale
-    const locale = defaultLocale;
-    request.nextUrl.pathname = `/${locale}${pathname}`;
-    return NextResponse.redirect(request.nextUrl);
+  const pathnameHasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
+
+  if (pathnameHasLocale) return NextResponse.next();
+
+  request.nextUrl.pathname = `/${defaultLocale}${pathname}`;
+  return NextResponse.redirect(request.nextUrl);
 }
 
 export const config = {
-    matcher: [
-        // Only run on "page" URLs.
-        // Skip Next internals, API, and any path that looks like a file (has a dot), e.g. /robots.txt, /og-image.jpg
-        "/((?!_next|api|.*\\..*).*)"
-    ],
+  matcher: [
+    // Run on all non-internal paths; file paths are handled in middleware() above.
+    '/((?!_next|api).*)',
+  ],
 };
