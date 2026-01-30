@@ -41,6 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
                     url: 'https://stoic.abvx.xyz/og-image.jpg',
                     width: 1200,
                     height: 630,
+                    alt: 'Stoic Wisdom Series — toki pona editions',
                 },
             ],
         },
