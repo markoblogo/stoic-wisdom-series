@@ -89,10 +89,6 @@
         "a": "They are full editions in a structured reading format, not short summaries. The editing focuses on clarity and pacing, while keeping the work complete as a book."
       },
       {
-        "q": "Is the translation original for this publication?",
-        "a": "Yes. The toki pona translation is created specifically for these editions, with consistency across the series and with a glossary built from recurring phrases."
-      },
-      {
         "q": "Do you include the English reference text?",
         "a": "Yes. Each book includes a public-domain English reference text so you can verify meaning and compare choices made in the translation."
       },
@@ -105,14 +101,6 @@
         "a": "No. You can read the Latin script first. The sitelen pona layer is there for slower rereading and for building recognition over time."
       },
       {
-        "q": "Why repeat every line in sitelen pona?",
-        "a": "Repetition lowers friction. You first read meaning in Latin script, then you meet the same meaning again visually. That second pass often catches what the mind skipped."
-      },
-      {
-        "q": "Is sitelen pona good for reading practice?",
-        "a": "Yes, especially for retention. It encourages deliberate pace, strengthens pattern recognition, and makes rereading feel like practice instead of repetition."
-      },
-      {
         "q": "Is this suitable for beginners in toki pona?",
         "a": "It works best for motivated beginners who can tolerate ambiguity and rereading. If you’re brand new, start with a short guide, then return to the books with the glossary as support."
       },
@@ -121,32 +109,8 @@
         "a": "Intermediate is the sweet spot: you’ll read smoothly and still learn. Advanced readers use the books to refine style, consistency, and moral vocabulary."
       },
       {
-        "q": "Will this help me learn toki pona faster?",
-        "a": "It can, if you treat it as daily input. The repeated phrase frames and two-layer format help you internalize patterns rather than memorize isolated words."
-      },
-      {
-        "q": "Do you use rare words or complex grammar?",
-        "a": "The language stays within toki pona’s core style. Complexity comes mostly from ethics: careful distinctions, repeated frames, and disciplined phrasing."
-      },
-      {
         "q": "How should I read these books daily?",
         "a": "Read one short section, then reread the same lines in sitelen pona. Pick one “anchor phrase” and use it as a rule for your day."
-      },
-      {
-        "q": "How long does one reading session take?",
-        "a": "Many readers use 5–15 minutes. The format is designed for short daily sessions that build momentum through repetition."
-      },
-      {
-        "q": "Should I read the English first or toki pona first?",
-        "a": "Start with toki pona for the “clean pass.” Use English only when a line feels unstable or you want to verify nuance."
-      },
-      {
-        "q": "What is the “anchor-phrase glossary”?",
-        "a": "It’s a list of recurring phrases used as stable frames: decision rules, moral tests, and common patterns. It’s meant to be reused, not just looked up."
-      },
-      {
-        "q": "Why focus on phrases instead of a basic word list?",
-        "a": "Ethics lives in patterns, not isolated words. Phrases show how meaning behaves under pressure, and they keep your reading consistent across chapters."
       },
       {
         "q": "Are these available on Kindle and paperback?",
@@ -157,24 +121,8 @@
         "a": "The reader’s kit is linked from the series page and includes a quick orientation for reading toki pona and sitelen pona in this format."
       },
       {
-        "q": "Do you ship internationally?",
-        "a": "Availability depends on Amazon’s regional printing and shipping. Most readers in the US and parts of Europe can order without extra steps."
-      },
-      {
         "q": "How is this different from other Stoic editions?",
         "a": "The difference is the reading system: minimal language, two-layer reread with sitelen pona, English reference for checking, and a phrase-based glossary for consistency."
-      },
-      {
-        "q": "Is this a calm / minimalist design edition?",
-        "a": "Yes. The layout is intentionally spacious and quiet, designed to reduce distraction and support slow reading."
-      },
-      {
-        "q": "Why read Stoicism in a minimalist language?",
-        "a": "Because fewer words force cleaner decisions. When language can’t hide behind complexity, you notice motives, trade-offs, and self-deception faster."
-      },
-      {
-        "q": "Can I use this as a daily moral decision guide?",
-        "a": "Yes. The books are built around practical tests: what to do, what not to trade away, and how to stay stable under pressure."
       }
     ]
   },
