@@ -160,8 +160,14 @@
     gap: 0.8rem;
 }
 
+.secondaryLinks {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .teaserLink {
-    margin-top: 0.5rem;
     font-size: 0.95rem;
     color: var(--color-ink);
     opacity: 0.8;

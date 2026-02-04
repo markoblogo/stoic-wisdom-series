@@ -94,19 +94,21 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
                             </div>
                         )}
 
-                        {book.teaserVideoId && (
-                            <a
-                                href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
-                                target="_blank"
-                                rel="noopener"
-                                className={styles.teaserLink}
-                            >
-                                ▶ {dict.hero.watch_teaser}
+                        <div className={styles.secondaryLinks}>
+                            {book.teaserVideoId && (
+                                <a
+                                    href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
+                                    target="_blank"
+                                    rel="noopener"
+                                    className={styles.teaserLink}
+                                >
+                                    ▶ {dict.hero.watch_teaser}
+                                </a>
+                            )}
+                            <a href={`/${lang}/books/${book.id}`} className={styles.detailsLink}>
+                                {dict.collection.learn_more}
                             </a>
-                        )}
-                        <a href={`/${lang}/books/${book.id}`} className={styles.detailsLink}>
-                            {dict.collection.learn_more}
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
