@@ -109,6 +109,31 @@ export const books: Book[] = [
         }
     },
     {
+        id: "cicero-on-duties",
+        type: 'commercial',
+        title: {
+            en: "Cicero: On Duties (De Officiis) in toki pona — with sitelen pona",
+            tp: "jan Sise: lipu pi pali wile pona lon toki pona; sitelen pona kin"
+        },
+        author: {
+            en: "Cicero",
+            tp: "jan Sise"
+        },
+        coverImage: "/assets/books/cicero-on-duties/cover.webp",
+        promoImage: "/assets/books/cicero-on-duties/promo.webp",
+        amazonKindleUrl: "https://www.amazon.com/dp/B0GL86LVF1",
+        amazonPrintUrl: "https://www.amazon.com/dp/B0GLFN8KBX",
+        teaserVideoId: "61dVZDB-tYs",
+        shortDescription: {
+            en: "A practical handbook for moral decision-making in real life—promises, reputation, money, public duty, friendship, and pressure—reimagined in toki pona with sitelen pona for slow, clear rereading.",
+            tp: "lipu ni li pana e nasin pi pali wile pona lon tenpo ale. ona li pana e toki pona en sitelen pona tawa lukin sin, tawa lawa insa pi awen pona."
+        },
+        longDescription: {
+            en: "Cicero’s On Duties is built for the hardest everyday question: what to do when advantage pulls one way and conscience pulls another. This edition keeps the public-domain English reference text for comparison, then presents a full toki pona translation in two reading layers—Latin script and sitelen pona—so you can reread the same claims with fresh attention. Book I lays the foundation: what moral rightness is, where it comes from, and how it becomes practical rules you can carry into any situation. Book II tests “useful” choices in work, wealth, reputation, favors, and public life. Book III is the stress test: when the honorable and the useful seem to clash, Cicero argues that real advantage can’t be built on injustice—and that “benefit” bought by wrongdoing is a hidden debt paid later by you or the community.",
+            tp: "lipu ni li lon kulupu pi sona pona stoika lon toki pona. toki Inli li lon tawa lukin ante; toki pona li pali sin, li awen pona, li awen lili, li awen ken lukin. sitelen pona kin li lon tawa lukin sin, tawa pali pi lawa insa. lipu Book I li pana e open: ona li toki e ni: pali wile pona li seme, ona li kama tan seme, ona li kama nasin pi pali lon tenpo ale. lipu Book II li alasa e pona tawa kulupu lon mani, lon pali, lon nimi, lon pana pona, lon pali pi kulupu. lipu Book III li wile e pona pi awen: pona pi lon ala li ken kama tan pali ike. sina pali ike tawa jan, sina pakala e toki, anu sina pakala e nasin pona sina la, “pona” ni li len taso; ona li kama ike lon tenpo kama tawa sina anu tawa kulupu."
+        }
+    },
+    {
         id: "readers-kit",
         type: 'gift',
         title: {
