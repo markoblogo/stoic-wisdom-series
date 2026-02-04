@@ -104,6 +104,9 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
                                 ▶ {dict.hero.watch_teaser}
                             </a>
                         )}
+                        <a href={`/${lang}/books/${book.id}`} className={styles.detailsLink}>
+                            {dict.collection.learn_more}
+                        </a>
                     </div>
                 </div>
             </div>

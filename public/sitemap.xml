@@ -4,7 +4,7 @@
     <loc>https://stoic.abvx.xyz/en</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en"/>
     <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp"/>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,16 +12,101 @@
     <loc>https://stoic.abvx.xyz/tp</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en"/>
     <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp"/>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://stoic.abvx.xyz/en/books/marcus-meditations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/marcus-meditations"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/marcus-meditations"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stoic.abvx.xyz/tp/books/marcus-meditations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/marcus-meditations"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/marcus-meditations"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://stoic.abvx.xyz/en/books/epictetus-enchiridion</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/epictetus-enchiridion"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/epictetus-enchiridion"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stoic.abvx.xyz/tp/books/epictetus-enchiridion</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/epictetus-enchiridion"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/epictetus-enchiridion"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://stoic.abvx.xyz/en/books/seneca-shortness-of-life</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/seneca-shortness-of-life"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/seneca-shortness-of-life"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stoic.abvx.xyz/tp/books/seneca-shortness-of-life</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/seneca-shortness-of-life"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/seneca-shortness-of-life"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://stoic.abvx.xyz/en/books/cicero-on-duties</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/cicero-on-duties"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/cicero-on-duties"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stoic.abvx.xyz/tp/books/cicero-on-duties</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/cicero-on-duties"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/cicero-on-duties"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://stoic.abvx.xyz/en/books/readers-kit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/readers-kit"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/readers-kit"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://stoic.abvx.xyz/tp/books/readers-kit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/books/readers-kit"/>
+    <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/books/readers-kit"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://stoic.abvx.xyz/en/legal</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/legal"/>
     <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/legal"/>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -29,7 +114,7 @@
     <loc>https://stoic.abvx.xyz/tp/legal</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/legal"/>
     <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/legal"/>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -38,7 +123,7 @@
     <loc>https://stoic.abvx.xyz/en/privacy</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/privacy"/>
     <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/privacy"/>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -46,7 +131,7 @@
     <loc>https://stoic.abvx.xyz/tp/privacy</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://stoic.abvx.xyz/en/privacy"/>
     <xhtml:link rel="alternate" hreflang="tok" href="https://stoic.abvx.xyz/tp/privacy"/>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>

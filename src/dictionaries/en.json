@@ -1,15 +1,15 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Stoic Wisdom Series — Toki Pona",
-    "description": "Meditations of Marcus Aurelius — in Toki Pona: a minimalist Stoic classic. Includes a free beginner-friendly Reader’s Kit PDF + more toki pona books by the author."
+    "title": "Stoic Wisdom in toki pona — with sitelen pona",
+    "description": "Read Stoic classics in toki pona. Two-layer format: Latin script + sitelen pona, plus English reference text and practical glossary frames."
   },
   "header": {
     "lang": "EN / TP"
   },
   "hero": {
     "title": "Stoic Wisdom in Toki Pona",
-    "subtitle": "Classic Stoic texts reimagined in the world’s simplest language. Minimal words, clear ideas — with sitelen pona alongside toki pona to make reading feel like a visual practice.",
+    "subtitle": "Classic Stoic texts reimagined in the world’s simplest language. Minimal words, clear ideas — with sitelen pona alongside toki pona for a calm, visual reread.",
     "buy_kindle": "Kindle edition",
     "buy_print": "Paperback",
     "download_pdf": "Download PDF",
@@ -38,7 +38,7 @@
     }
   },
   "collection": {
-    "title": "Books",
+    "title": "Books in the series",
     "buy_button": "View",
     "learn_more": "Learn more",
     "marcus-meditations": {
@@ -71,6 +71,112 @@
       "shortDesc": "A practical handbook for moral decision-making in real life—promises, reputation, money, public duty, friendship, and pressure—reimagined in toki pona with sitelen pona for slow, clear rereading.",
       "longDesc": "Cicero’s On Duties is built for the hardest everyday question: what to do when advantage pulls one way and conscience pulls another. This edition keeps the public-domain English reference text for comparison, then presents a full toki pona translation in two reading layers—Latin script and sitelen pona—so you can reread the same claims with fresh attention. Book I lays the foundation: what moral rightness is, where it comes from, and how it becomes practical rules you can carry into any situation. Book II tests “useful” choices in work, wealth, reputation, favors, and public life. Book III is the stress test: when the honorable and the useful seem to clash, Cicero argues that real advantage can’t be built on injustice—and that “benefit” bought by wrongdoing is a hidden debt paid later by you or the community."
     }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Short answers about the series, sitelen pona, and reading method.",
+    "items": [
+      {
+        "q": "What is Stoic Wisdom in toki pona?",
+        "a": "It’s a book series that reimagines classic Stoic texts in toki pona, with each line also repeated in sitelen pona. The goal is a calmer, lower-noise way to read ethics: fewer words, clearer choices, less room for self-deception."
+      },
+      {
+        "q": "Which books are in the series?",
+        "a": "The series includes key classics commonly read as practical ethics: Marcus Aurelius, Epictetus, Seneca, and Cicero. Each book is edited for slow, daily reading in the same visual system."
+      },
+      {
+        "q": "Are these full texts or summaries?",
+        "a": "They are full editions in a structured reading format, not short summaries. The editing focuses on clarity and pacing, while keeping the work complete as a book."
+      },
+      {
+        "q": "Is the translation original for this publication?",
+        "a": "Yes. The toki pona translation is created specifically for these editions, with consistency across the series and with a glossary built from recurring phrases."
+      },
+      {
+        "q": "Do you include the English reference text?",
+        "a": "Yes. Each book includes a public-domain English reference text so you can verify meaning and compare choices made in the translation."
+      },
+      {
+        "q": "What is sitelen pona?",
+        "a": "It’s a pictographic writing system for toki pona. In these books it works as a second pass: the same line is shown again visually, turning rereading into a quiet practice."
+      },
+      {
+        "q": "Do I need to know sitelen pona before reading?",
+        "a": "No. You can read the Latin script first. The sitelen pona layer is there for slower rereading and for building recognition over time."
+      },
+      {
+        "q": "Why repeat every line in sitelen pona?",
+        "a": "Repetition lowers friction. You first read meaning in Latin script, then you meet the same meaning again visually. That second pass often catches what the mind skipped."
+      },
+      {
+        "q": "Is sitelen pona good for reading practice?",
+        "a": "Yes, especially for retention. It encourages deliberate pace, strengthens pattern recognition, and makes rereading feel like practice instead of repetition."
+      },
+      {
+        "q": "Is this suitable for beginners in toki pona?",
+        "a": "It works best for motivated beginners who can tolerate ambiguity and rereading. If you’re brand new, start with a short guide, then return to the books with the glossary as support."
+      },
+      {
+        "q": "What level of toki pona is best for these books?",
+        "a": "Intermediate is the sweet spot: you’ll read smoothly and still learn. Advanced readers use the books to refine style, consistency, and moral vocabulary."
+      },
+      {
+        "q": "Will this help me learn toki pona faster?",
+        "a": "It can, if you treat it as daily input. The repeated phrase frames and two-layer format help you internalize patterns rather than memorize isolated words."
+      },
+      {
+        "q": "Do you use rare words or complex grammar?",
+        "a": "The language stays within toki pona’s core style. Complexity comes mostly from ethics: careful distinctions, repeated frames, and disciplined phrasing."
+      },
+      {
+        "q": "How should I read these books daily?",
+        "a": "Read one short section, then reread the same lines in sitelen pona. Pick one “anchor phrase” and use it as a rule for your day."
+      },
+      {
+        "q": "How long does one reading session take?",
+        "a": "Many readers use 5–15 minutes. The format is designed for short daily sessions that build momentum through repetition."
+      },
+      {
+        "q": "Should I read the English first or toki pona first?",
+        "a": "Start with toki pona for the “clean pass.” Use English only when a line feels unstable or you want to verify nuance."
+      },
+      {
+        "q": "What is the “anchor-phrase glossary”?",
+        "a": "It’s a list of recurring phrases used as stable frames: decision rules, moral tests, and common patterns. It’s meant to be reused, not just looked up."
+      },
+      {
+        "q": "Why focus on phrases instead of a basic word list?",
+        "a": "Ethics lives in patterns, not isolated words. Phrases show how meaning behaves under pressure, and they keep your reading consistent across chapters."
+      },
+      {
+        "q": "Are these available on Kindle and paperback?",
+        "a": "Yes. The editions are designed as print-style reading, and the Kindle version follows the same structure as closely as possible."
+      },
+      {
+        "q": "Where can I get the free reader’s kit?",
+        "a": "The reader’s kit is linked from the series page and includes a quick orientation for reading toki pona and sitelen pona in this format."
+      },
+      {
+        "q": "Do you ship internationally?",
+        "a": "Availability depends on Amazon’s regional printing and shipping. Most readers in the US and parts of Europe can order without extra steps."
+      },
+      {
+        "q": "How is this different from other Stoic editions?",
+        "a": "The difference is the reading system: minimal language, two-layer reread with sitelen pona, English reference for checking, and a phrase-based glossary for consistency."
+      },
+      {
+        "q": "Is this a calm / minimalist design edition?",
+        "a": "Yes. The layout is intentionally spacious and quiet, designed to reduce distraction and support slow reading."
+      },
+      {
+        "q": "Why read Stoicism in a minimalist language?",
+        "a": "Because fewer words force cleaner decisions. When language can’t hide behind complexity, you notice motives, trade-offs, and self-deception faster."
+      },
+      {
+        "q": "Can I use this as a daily moral decision guide?",
+        "a": "Yes. The books are built around practical tests: what to do, what not to trade away, and how to stay stable under pressure."
+      }
+    ]
   },
   "legal": {
     "title": "Legal notice",

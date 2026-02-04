@@ -1,8 +1,8 @@
 {
   "lang": "tp",
   "meta": {
-    "title": "kulupu lipu Stoic Wisdom Series — toki pona",
-    "description": "lipu pi sona stoic li kama sin lon toki pona — sitelen pona li lon poka toki pona. lipu pi mani ala (Reader’s Kit) li lon kin — en lipu ante pi toki pona tan jan sama."
+    "title": "sona stoic lon toki pona — sitelen pona kin",
+    "description": "lipu pi sona stoic lon toki pona. lipu li jo e sitelen Lasina en sitelen pona; toki Inli pi lukin ante li lon."
   },
   "header": {
     "lang": "EN / TP"
@@ -38,7 +38,7 @@
     }
   },
   "collection": {
-    "title": "lipu",
+    "title": "lipu lon kulupu ni",
     "buy_button": "o lukin",
     "learn_more": "o sona",
     "marcus-meditations": {
@@ -71,6 +71,112 @@
       "shortDesc": "lipu ni li pana e nasin pi pali wile pona lon tenpo ale. ona li pana e toki pona en sitelen pona tawa lukin sin, tawa lawa insa pi awen pona.",
       "longDesc": "lipu ni li lon kulupu pi sona pona stoika lon toki pona. toki Inli li lon tawa lukin ante; toki pona li pali sin, li awen pona, li awen lili, li awen ken lukin. sitelen pona kin li lon tawa lukin sin, tawa pali pi lawa insa. lipu Book I li pana e open: ona li toki e ni: pali wile pona li seme, ona li kama tan seme, ona li kama nasin pi pali lon tenpo ale. lipu Book II li alasa e pona tawa kulupu lon mani, lon pali, lon nimi, lon pana pona, lon pali pi kulupu. lipu Book III li wile e pona pi awen: pona pi lon ala li ken kama tan pali ike. sina pali ike tawa jan, sina pakala e toki, anu sina pakala e nasin pona sina la, “pona” ni li len taso; ona li kama ike lon tenpo kama tawa sina anu tawa kulupu."
     }
+  },
+  "faq": {
+    "title": "toki wile (FAQ)",
+    "subtitle": "toki lili pi kulupu lipu, sitelen pona, en nasin lukin.",
+    "items": [
+      {
+        "q": "lipu ni li seme: sona pi nasin stoika kepeken toki pona?",
+        "a": "ni li kulupu lipu pi sona pi nasin stoika. toki ale li toki pona, li toki sin kepeken sitelen pona. nasin ni li pana e lukin lipu pi lete pilin: nimi li lili, sona li wawa, toki len li lili."
+      },
+      {
+        "q": "lipu seme li lon kulupu lipu ni?",
+        "a": "lipu pi jan Maku Auleli en jan Epikete en jan Seneka en jan Siselo li lon. lipu ale li jo e nasin lukin sama, tawa lukin lon tenpo suno ale."
+      },
+      {
+        "q": "lipu ni li lipu ale anu lipu lili taso?",
+        "a": "lipu ni li lipu ale. ona li lipu lili pi sona wan ala. taso nasin pi pali lipu li pona tawa lukin weka e nasa."
+      },
+      {
+        "q": "ante toki ni li pali sin tawa lipu ni anu seme?",
+        "a": "lon. ante toki toki pona li pali sin tawa kulupu lipu ni. ona li awen sama lon lipu mute, li jo e kulupu toki pi kama lon mute."
+      },
+      {
+        "q": "toki Inli li lon lipu ni anu seme?",
+        "a": "lon. toki Inli li lon tawa ni: sina ken lukin e kon, ken ante e lukin, ken alasa e lon pi sona."
+      },
+      {
+        "q": "sitelen pona li seme?",
+        "a": "sitelen pona li nasin sitelen tawa toki pona. lon lipu ni la ona li lukin sin: toki sama li lon, taso ona li lon kepeken sitelen. ni li pana e lukin lipu pi lete pilin."
+      },
+      {
+        "q": "mi wile sona e sitelen pona tan open lipu anu seme?",
+        "a": "ala. sina ken lukin e toki pona kepeken sitelen Lasina open. sitelen pona li tawa lukin sin pi tenpo lili, li tawa kama sona lon tenpo."
+      },
+      {
+        "q": "tan seme la sitelen pona li toki sin e toki ale?",
+        "a": "tan ni: lukin sin li pona. sina lukin e kon kepeken sitelen Lasina, poka la sina lukin e kon sama kepeken sitelen pona. lukin sin li ken alasa e ijo pi tawa weka lon lawa."
+      },
+      {
+        "q": "sitelen pona li pona tawa pali pi kama sona anu seme?",
+        "a": "lon. ona li pona tawa awen sona. ona li wile e tenpo pi tawa ala, li pona e lukin pi nasin sama, li pali e lukin sin sama pali pona, sama lukin taso ala."
+      },
+      {
+        "q": "lipu ni li pona tawa jan pi kama sona lon toki pona anu seme?",
+        "a": "ona li pona tawa jan pi open, taso jan ni o wile awen, o ken lukin sin. sina jan pi open mute la o kama sona tan lipu lili, lon tenpo kama la o tawa lipu ni kepeken kulupu toki."
+      },
+      {
+        "q": "jan pi sona seme lon toki pona li pona tawa lipu ni?",
+        "a": "jan pi sona meso li pona mute: ona li ken lukin pona, li ken kama sona sin. jan pi sona suli li kepeken lipu ni tawa pona e nasin toki, tawa awen sama, tawa wawa e sona pi pali pona."
+      },
+      {
+        "q": "lipu ni li ken pali e ni: mi kama sona pi toki pona kepeken tenpo lili anu seme?",
+        "a": "ken. taso sina o kepeken ona lon tenpo suno ale. kulupu toki pi kama lon mute en lukin tu li pana e sona pi nasin sama, pi lipu nimi taso ala."
+      },
+      {
+        "q": "lipu ni li kepeken nimi pi mute ala anu nasin toki pi suli anu seme?",
+        "a": "toki li awen lon nasin pona pi toki pona. suli li kama tan sona pi pali pona: ante lili pi kon, kulupu toki pi kama lon mute, nasin toki pi awen."
+      },
+      {
+        "q": "mi o lukin e lipu ni lon tenpo suno ale kepeken nasin seme?",
+        "a": "o lukin e kipisi lili. o lukin sin e toki sama kepeken sitelen pona. o kama jo e toki wan pi kama lon mute, o kepeken ona tawa lawa e tenpo suno sina."
+      },
+      {
+        "q": "tenpo pi lukin lipu wan li suli seme?",
+        "a": "jan mute li kepeken tenpo lili: tenpo 5 tawa tenpo 15. nasin lipu li pali tawa ni: lukin lili lon tenpo suno ale li kama suli lon tenpo mute."
+      },
+      {
+        "q": "mi o lukin e toki Inli open anu mi o lukin e toki pona open?",
+        "a": "o lukin e toki pona open tawa lukin pi kon. toki Inli la o kepeken ona taso lon tenpo ni: sina pilin e pakala, anu sina wile sona e ante lili pi kon."
+      },
+      {
+        "q": "kulupu toki pi kama lon mute li seme?",
+        "a": "ni li lipu pi kulupu toki pi kama lon mute. toki ni li sama lawa: ona li pana e nasin pi pali pona, e nasin pi alasa sona, e nasin pi awen pona. sina o kepeken ona lon tenpo mute, lon lukin taso ala."
+      },
+      {
+        "q": "tan seme la lipu ni li pana e kulupu toki, li pana ala e lipu nimi taso?",
+        "a": "sona pi pali pona li lon nasin, li lon kulupu, li lon toki lon tenpo. nimi taso la kon li ken tawa ante. kulupu toki li awen e kon, li pana e nasin sama lon lipu mute."
+      },
+      {
+        "q": "lipu ni li lon ilo Kindle en lipu palisa anu seme?",
+        "a": "lon. lipu palisa en lipu pi ilo Kindle li lon. nasin lipu li sama, li wile awen sama lon ilo."
+      },
+      {
+        "q": "mi ken kama jo e ijo pona pi sona lipu kepeken nasin seme?",
+        "a": "sina ken kama jo e ijo ni tan lipu pi kulupu lipu. ona li pana e nasin pi kama sona, tawa lukin e toki pona en sitelen pona lon nasin lipu ni."
+      },
+      {
+        "q": "pana lipu tawa ma ante li lon anu seme?",
+        "a": "ni li wile lukin lon nasin pana pi lipu. ma mute la sina ken kama jo. taso tenpo la ma ante li jo ala e nasin pona."
+      },
+      {
+        "q": "lipu ni li ante seme tan lipu ante pi sona stoika?",
+        "a": "ante li lon nasin lukin: toki pona li lili, sitelen pona li pana e lukin sin, toki Inli li lon tawa sona, kulupu toki li pana e awen sama lon lipu ale."
+      },
+      {
+        "q": "lipu ni li jo e sitelen pi lete pilin, li jo e nasin pi nasa ala anu seme?",
+        "a": "lon. lipu li jo e kon pi wile lili, li jo e ma pi ken lili. ona li weka e nasa, li pona tawa lukin lili, lukin awen."
+      },
+      {
+        "q": "tan seme la mi o lukin e sona stoika kepeken toki pona?",
+        "a": "tan ni: nimi li lili la lawa li wile pana e kon pona. toki li ken len ala e wile insa. sina ken lukin e esun ike, e wile len, e toki len lon tenpo lili."
+      },
+      {
+        "q": "mi ken kepeken lipu ni tawa pilin e pali pona lon tenpo suno ale anu seme?",
+        "a": "lon. lipu ni li pana e pali pi wile sona: mi o pali seme, mi o esun ala e seme, mi o awen pona lon tenpo pi wawa utala."
+      }
+    ]
   },
   "legal": {
     "title": "lipu lawa",

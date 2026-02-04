@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import WhySection from '@/components/WhySection';
 import BookList from '@/components/BookList';
 import Footer from '@/components/Footer';
+import FAQ from '@/components/FAQ';
 import styles from './page.module.css';
 import { books } from '@/data/books';
 import { moreBooks } from '@/data/moreBooks';
@@ -26,6 +27,22 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
     ],
   };
 
+  const faqItems = (dict?.faq?.items ?? []).map((item: any) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a,
+    },
+  }));
+
+  if (faqItems.length) {
+    (graph['@graph'] as any[]).push({
+      '@type': 'FAQPage',
+      mainEntity: faqItems,
+    });
+  }
+
   return (
     <main className={styles.main}>
       <Script
@@ -38,6 +55,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
       <Hero dict={dict} lang={validLang} />
       <WhySection dict={dict} />
       <BookList dict={dict} />
+      <FAQ dict={dict} />
       <Footer dict={dict} lang={validLang} />
     </main>
   );

@@ -175,6 +175,13 @@
     border-bottom-color: var(--color-ink);
 }
 
+.detailsLink {
+    font-size: 0.95rem;
+    color: var(--color-ink);
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
 /* Lightbox */
 .lightbox {
     position: fixed;
