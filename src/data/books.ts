@@ -59,6 +59,31 @@ export const books: Book[] = [
         }
     },
     {
+        id: "epictetus-enchiridion",
+        type: 'commercial',
+        title: {
+            en: "Epictetus: The Enchiridion in toki pona",
+            tp: "jan Epiteto: lipu Enkilijon lon toki pona"
+        },
+        author: {
+            en: "Epictetus",
+            tp: "jan Epiteto"
+        },
+        coverImage: "/assets/books/epictetus-enchiridion/cover.webp",
+        promoImage: "/assets/books/epictetus-enchiridion/promo.webp",
+        amazonKindleUrl: "https://www.amazon.com/dp/B0GKWR5NL1",
+        amazonPrintUrl: "https://www.amazon.com/dp/B0GKXXJGZV",
+        teaserVideoId: "DNgkm9tf6Cg",
+        shortDescription: {
+            en: "A compact Stoic manual for clear choices under pressure: learn what is in your control, what is not, and how to act without noise.",
+            tp: "lipu Enkilijon li lipu lili pi sona Sito. ona li pana e nasin pi lawa insa: ijo li lon pali mi, ijo li lon pali ala mi. ona li pona tawa tenpo pi wile mute en tenpo pi pilin pakala."
+        },
+        longDescription: {
+            en: "The Enchiridion is a practical handbook: short chapters meant to be revisited, especially when life gets loud. This edition reimagines Epictetus in toki pona for a calmer, more inspectable kind of reading. What you get in this volume: Public-domain English reference text (Elizabeth Carter, 1758) for comparison. Two-layer toki pona reading format: Latin script + the same line repeated for sitelen pona. A reading method designed for slow progress: small daily units, repetition, and “What is the instruction?” as the main question. Links to the free beginner kit and the series page. Created & curated by Biletskyi-Volokh Anton.",
+            tp: "lipu Enkilijon li lipu pi nasin pali. lipu lili mute li lon. sina ken lukin e wan, sina awen, sina kepeken sona ona lon tenpo suno. lipu ni li ante e toki pi jan Epiteto kepeken toki pona, tawa ni: lukin li nasa ala, lawa li ken awen. ijo lon lipu ni: toki Inli pi lipu pi jan Elizabeth Carter tawa lukin ante. toki pona lon sitelen Lasina, en toki sama lon sitelen pona. nasin pi lukin lili lon tenpo mute: o lukin e lipu lili, o awen, o pana e sona ona tawa tenpo suno. nasin pona: “toki pona pi lipu ni li wile ni: sina ken lukin e pali wile.” sina ken kama jo e lipu pona pi kama sona, e lipu pi kulupu lipu, lon nimi lon lipu."
+        }
+    },
+    {
         id: "readers-kit",
         type: 'gift',
         title: {

@@ -15,10 +15,13 @@ interface HeroCoverGridProps {
 }
 
 // Staircase configuration for Desktop
-// For this landing we start with 2 books.
+// Tuned for up to 5 books.
 const STACK_TRANSFORMS = [
-    { x: 0, y: 120, r: -2, z: 10 },     // Front
-    { x: 90, y: 20, r: 3, z: 9 },       // Back
+    { x: 0, y: 140, r: -3, z: 10 },     // Front
+    { x: 70, y: 60, r: 2, z: 9 },       // Back-right
+    { x: 140, y: -10, r: 6, z: 8 },     // Far-right
+    { x: -70, y: 60, r: -6, z: 7 },     // Back-left
+    { x: -140, y: -10, r: -10, z: 6 },  // Far-left
 ];
 
 export default function HeroCoverGrid({ books, onSelect, lang }: HeroCoverGridProps) {
