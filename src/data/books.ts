@@ -84,6 +84,31 @@ export const books: Book[] = [
         }
     },
     {
+        id: "seneca-shortness-of-life",
+        type: 'commercial',
+        title: {
+            en: "Seneca: On the Shortness of Life in toki pona",
+            tp: "jan Seneka — lipu pi tenpo lili pi lon — lon toki pona"
+        },
+        author: {
+            en: "Seneca",
+            tp: "jan Seneka"
+        },
+        coverImage: "/assets/books/seneca-shortness-of-life/cover.webp",
+        promoImage: "/assets/books/seneca-shortness-of-life/promo.webp",
+        amazonKindleUrl: "https://www.amazon.com/dp/B0GKCJ72PG",
+        amazonPrintUrl: "https://www.amazon.com/dp/B0GL1ZBK18",
+        teaserVideoId: "_JL2xu4Sn70",
+        shortDescription: {
+            en: "A sharp, calming reminder that life isn’t “too short” — we simply waste much of it. Readable, practical Stoic advice on attention, priorities, and reclaiming your days, reimagined in toki pona.",
+            tp: "lipu ni li pana e sona pi tenpo: tenpo li lili ala; mi weka e tenpo mute. lipu ni li pana e nasin pona tawa lawa en pali, li toki e ni: o kama jo sin e tenpo sina — lon toki pona."
+        },
+        longDescription: {
+            en: "“Life is short” is the common complaint. Seneca’s answer is tougher and more useful: the problem isn’t the length of life, but what we trade it for. This short classic is a practical guide to noticing waste, resisting distraction, and investing your days on purpose. This edition is part of Stoic Wisdom in Toki Pona — classic Stoic texts reimagined in the world’s simplest language. The English text is public domain; the toki pona version is a new creative work, written to keep the language clean, small, and readable while preserving Seneca’s practical force. Reading help is built into the edition: the translation keeps key phrases stable so repeated ideas stay easy to spot, and the glossary is designed around recurring “anchor patterns.” You can also start with the free Reader’s Kit and links provided in the book.",
+            tp: "jan mute li toki e ni: “tenpo mi li lili.” taso jan Seneka li toki wawa: tenpo li lili ala; mi weka e tenpo mute. lipu ni li pana e nasin pona tawa ni: o lukin e weka pi tenpo, o awen e lawa, o kepeken tenpo kepeken wile pona. lipu ni li lon kulupu Stoic Wisdom in Toki Pona. toki Inli li tan lipu pi jan ala. toki pona li pali sin, li pali tawa ni: toki pi jan Seneka li awen wawa, taso toki li awen pona, li awen lili, li awen ken lukin. toki pona lon lipu ni li awen sama lon ijo suli: nimi li awen sama la, sina ken lukin e ijo sama lon tenpo mute. lipu pi nimi pi pana sona li pana e nasin tan kulupu pi toki sama. sina wile open la, lipu “Reader’s Kit” en nasin pi sitelen pona li lon (kepeken nimi pi pana tawa sina)."
+        }
+    },
+    {
         id: "readers-kit",
         type: 'gift',
         title: {
