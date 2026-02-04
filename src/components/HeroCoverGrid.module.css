@@ -86,7 +86,7 @@
         height: 650px;
         /* Tall enough */
         width: 100%;
-        max-width: 650px;
+        max-width: 760px;
         /* Constrain width to keep stack tight */
     }
 

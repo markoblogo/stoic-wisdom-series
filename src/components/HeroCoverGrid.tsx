@@ -14,18 +14,23 @@ interface HeroCoverGridProps {
     lang: string;
 }
 
-// Staircase configuration for Desktop
-// Tuned for up to 5 books.
+// Staircase configuration for Desktop (front -> back).
+// Tuned for 5 books with a right-leaning stack like the reference.
 const STACK_TRANSFORMS = [
-    { x: 0, y: 140, r: -3, z: 10 },     // Front
-    { x: 70, y: 60, r: 2, z: 9 },       // Back-right
-    { x: 140, y: -10, r: 6, z: 8 },     // Far-right
-    { x: -70, y: 60, r: -6, z: 7 },     // Back-left
-    { x: -140, y: -10, r: -10, z: 6 },  // Far-left
+    { x: 0, y: 150, r: -3, z: 10 },   // Front
+    { x: 90, y: 95, r: 1, z: 9 },     // Back 1
+    { x: 170, y: 40, r: 4, z: 8 },    // Back 2
+    { x: 250, y: -15, r: 7, z: 7 },   // Back 3
+    { x: 320, y: -70, r: 10, z: 6 },  // Back 4
 ];
 
 export default function HeroCoverGrid({ books, onSelect, lang }: HeroCoverGridProps) {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+    const orderedBooks = [...books].sort((a, b) => {
+        if (a.type === 'gift') return 1;
+        if (b.type === 'gift') return -1;
+        return 0;
+    });
 
     const handleBookClick = (book: Book) => {
         onSelect(book);
@@ -34,7 +39,7 @@ export default function HeroCoverGrid({ books, onSelect, lang }: HeroCoverGridPr
     return (
         <div className={styles.stackContainer}>
             <div className={styles.scroller}>
-                {books.map((book, index) => {
+                {orderedBooks.map((book, index) => {
                     const isGift = book.type === 'gift';
                     const badgeLabel = 'FREE';
                     const transform = STACK_TRANSFORMS[index] || STACK_TRANSFORMS[0];
