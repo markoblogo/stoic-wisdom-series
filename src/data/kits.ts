@@ -18,10 +18,10 @@ export const freeKits: FreeKit[] = [
     bullet: 'Includes The Golden Verses of Pythagoras (full text)',
     description:
       'A beginner-friendly starter pack for reading toki pona with clear pacing and practical cues.',
-    pdfUrl: '/assets/kits/stoicKit.pdf',
+    pdfUrl: 'https://toki.abvx.xyz/kit.pdf',
     teaserUrl: 'https://youtu.be/6AhXMiVvsXg',
-    coverImage: '/assets/kits/stoicCover.png',
-    promoImage: '/assets/kits/stoicPromo.jpg',
+    coverImage: '/assets/books/readers-kit/cover.webp',
+    promoImage: '/assets/books/readers-kit/promo.webp',
   },
   {
     id: 'chinese-wisdom-kit',
@@ -32,7 +32,7 @@ export const freeKits: FreeKit[] = [
       'An entry point into Chinese wisdom texts in toki pona with visual plates and reading prompts.',
     pdfUrl: '/assets/kits/chineseKit.pdf',
     teaserUrl: 'https://youtu.be/2eTLmbfBuxI',
-    coverImage: '/assets/kits/chineseCover.jpg',
-    promoImage: '/assets/kits/chinesePromo.png',
+    coverImage: '/assets/kits/chineseCover.svg',
+    promoImage: '/assets/kits/chinesePromo.svg',
   },
 ];
