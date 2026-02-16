@@ -22,7 +22,7 @@ export default function WhySection({ dict }: WhySectionProps) {
 
                 <div className={styles.grid}>
                     {cards.map((card: any, i: number) => (
-                        <div key={i} className={styles.card}>
+                        <div key={i} className={`${styles.card} ux-hover-card`}>
                             <h3 className={styles.cardTitle}>{card.title}</h3>
                             <p className={styles.cardText}>{card.text}</p>
                         </div>

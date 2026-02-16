@@ -20,7 +20,7 @@ function Banner({ href, title, subtitle, variant, iconText = '>', thumbSrc }: Ba
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`${styles.bannerCard} ${styles[`banner_${variant}`]}`}
+      className={`${styles.bannerCard} ${styles[`banner_${variant}`]} ux-hover-card ux-focus-ring`}
     >
       <div className={styles.bannerInner}>
         {thumbSrc ? (
@@ -52,18 +52,18 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
           <div className={styles.leftCol}>
             <div className={styles.contactRow}>
               <h4 className={styles.contactLabel}>{dict?.contact?.text ?? 'Contact'}</h4>
-              <a href={mailto} className={styles.mailLink}>
+              <a href={mailto} className={`${styles.mailLink} ux-hover-btn ux-focus-ring`}>
                 {emailDisplay}
               </a>
 
               <div className={styles.socials}>
-                <a href={socialMedium} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <a href={socialMedium} target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ux-hover-btn ux-focus-ring`}>
                   {dict?.contact?.social_medium ?? 'Medium'}
                 </a>
-                <a href={socialSubstack} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <a href={socialSubstack} target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ux-hover-btn ux-focus-ring`}>
                   {dict?.contact?.social_substack ?? 'Substack'}
                 </a>
-                <a href={socialGitHub} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <a href={socialGitHub} target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ux-hover-btn ux-focus-ring`}>
                   GitHub
                 </a>
               </div>
@@ -74,15 +74,15 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
                 href="https://abvx.xyz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.copyright}
+                className={`${styles.copyright} ux-hover-btn ux-focus-ring`}
               >
                 {dict?.footer?.copyright ?? `© ${new Date().getFullYear()} ABVX.xyz`}
               </a>
               <div className={styles.legalLinks}>
-                <Link href={`/${lang}/legal`} className={styles.legalLink}>
+                <Link href={`/${lang}/legal`} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`}>
                   {dict?.footer?.legal_mentions ?? 'Legal'}
                 </Link>
-                <Link href={`/${lang}/privacy`} className={styles.legalLink}>
+                <Link href={`/${lang}/privacy`} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`}>
                   {dict?.footer?.privacy_policy ?? 'Privacy'}
                 </Link>
               </div>

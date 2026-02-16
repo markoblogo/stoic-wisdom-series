@@ -83,12 +83,12 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
       <Script id={`jsonld-book-${book.id}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <div className="container">
-        <Link href={`/${safeLang}#${book.id}`} className={styles.backLink}>
+        <Link href={`/${safeLang}#${book.id}`} className={`${styles.backLink} ux-hover-btn ux-focus-ring`}>
           ← {dict?.footer?.back_home ?? 'Back to home'}
         </Link>
 
         <div className={styles.hero}>
-          <div className={styles.coverWrap}>
+          <div className={`${styles.coverWrap} ux-hover-card`}>
             <Image
               src={book.coverImage}
               alt={localized.title}
@@ -108,12 +108,12 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
               {book.type === 'gift' ? (
                 <>
                   {book.downloadPdfUrl && (
-                    <a href={book.downloadPdfUrl} download className="btn btn-accent">
+                    <a href={book.downloadPdfUrl} download className="btn btn-accent ux-hover-btn ux-focus-ring">
                       {dict.hero.download_pdf}
                     </a>
                   )}
                   {book.downloadEpubUrl && (
-                    <a href={book.downloadEpubUrl} download className="btn">
+                    <a href={book.downloadEpubUrl} download className="btn ux-hover-btn ux-focus-ring">
                       {dict.hero.download_epub}
                     </a>
                   )}
@@ -121,12 +121,12 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
               ) : (
                 <>
                   {book.amazonKindleUrl && (
-                    <a href={book.amazonKindleUrl} target="_blank" rel="noopener" className="btn btn-accent">
+                    <a href={book.amazonKindleUrl} target="_blank" rel="noopener" className="btn btn-accent ux-hover-btn ux-focus-ring">
                       {dict.hero.buy_kindle}
                     </a>
                   )}
                   {book.amazonPrintUrl && (
-                    <a href={book.amazonPrintUrl} target="_blank" rel="noopener" className="btn">
+                    <a href={book.amazonPrintUrl} target="_blank" rel="noopener" className="btn ux-hover-btn ux-focus-ring">
                       {dict.hero.buy_print}
                     </a>
                   )}
@@ -139,7 +139,7 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
                 href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
                 target="_blank"
                 rel="noopener"
-                className={styles.teaserLink}
+                className={`${styles.teaserLink} ux-hover-btn ux-focus-ring`}
               >
                 ▶ {dict.hero.watch_teaser}
               </a>

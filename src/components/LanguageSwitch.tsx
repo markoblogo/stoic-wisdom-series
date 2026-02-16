@@ -20,14 +20,14 @@ export default function LanguageSwitch({ currentLang }: { currentLang: 'en' | 't
         <div className={styles.switch}>
             <Link
                 href={getNewPath('en')}
-                className={`${styles.btn} ${currentLang === 'en' ? styles.active : ''}`}
+                className={`${styles.btn} ux-hover-btn ux-focus-ring ${currentLang === 'en' ? styles.active : ''}`}
             >
                 EN
             </Link>
             <span className={styles.sep}>/</span>
             <Link
                 href={getNewPath('tp')}
-                className={`${styles.btn} ${currentLang === 'tp' ? styles.active : ''}`}
+                className={`${styles.btn} ux-hover-btn ux-focus-ring ${currentLang === 'tp' ? styles.active : ''}`}
             >
                 TP
             </Link>

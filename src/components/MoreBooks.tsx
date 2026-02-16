@@ -64,7 +64,7 @@ export default function MoreBooks({ dict }: { dict: any }) {
 
         <div className={styles.grid}>
           {BOOKS.map((b) => (
-            <article key={b.id} className={styles.card}>
+            <article key={b.id} className={`${styles.card} ux-hover-card`}>
               <div className={styles.inner}>
                 <div className={styles.media}>
                   <Image src={b.promoSrc} alt={`Promo for ${b.title}`} fill className={styles.promoImg} sizes="(max-width: 900px) 100vw, 50vw" />
@@ -78,15 +78,15 @@ export default function MoreBooks({ dict }: { dict: any }) {
 
                   <div className={styles.actions}>
                     <div className={styles.ctas}>
-                      <a href={b.kindleUrl} target="_blank" rel="noopener" className={`btn btn-accent ${styles.btnCompact}`}>
+                      <a href={b.kindleUrl} target="_blank" rel="noopener" className={`btn btn-accent ux-hover-btn ux-focus-ring ${styles.btnCompact}`}>
                         {dict?.hero?.buy_kindle ?? 'KINDLE EDITION'}
                       </a>
-                      <a href={b.paperbackUrl} target="_blank" rel="noopener" className={`btn ${styles.btnCompact}`}>
+                      <a href={b.paperbackUrl} target="_blank" rel="noopener" className={`btn ux-hover-btn ux-focus-ring ${styles.btnCompact}`}>
                         {dict?.hero?.buy_print ?? 'PAPERBACK'}
                       </a>
                     </div>
 
-                    <a href={b.teaserUrl} target="_blank" rel="noopener" className={styles.teaser}>
+                    <a href={b.teaserUrl} target="_blank" rel="noopener" className={`${styles.teaser} ux-hover-btn ux-focus-ring`}>
                       ▶ {dict?.hero?.watch_teaser ?? 'Watch teaser'}
                     </a>
                   </div>

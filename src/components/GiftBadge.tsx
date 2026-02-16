@@ -11,7 +11,7 @@ export default function GiftBadge({ label, className = '', style }: GiftBadgePro
     // Determine if it's French or Ukrainian specific styling needs (optional, but good for "stamp" variants)
     // For now standard stamp.
     return (
-        <div className={`${styles.badge} ${className}`} style={style}>
+        <div className={`${styles.badge} ux-hover-sticker ${className}`} style={style}>
             <div className={styles.innerRing}>
                 <span className={styles.text}>{label}</span>
             </div>

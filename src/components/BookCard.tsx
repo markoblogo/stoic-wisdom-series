@@ -22,7 +22,7 @@ export default function BookCard({ book, dict, lang }: BookCardProps) {
     const paperSoonText = lang === 'tp' ? 'kama sona' : 'soon';
 
     return (
-        <div className={styles.card} id={book.id}>
+        <div className={`${styles.card} ux-hover-card`} id={book.id}>
             <div className={styles.coverWrapper}>
                 <Image
                     src={book.promoImage}
@@ -44,26 +44,26 @@ export default function BookCard({ book, dict, lang }: BookCardProps) {
                     <div className={styles.amazonGroup}>
                         {book.type === 'gift' ? (
                             <>
-                                <a href={book.downloadPdfUrl} download className={styles.buyBtn}>
+                                <a href={book.downloadPdfUrl} download className={`${styles.buyBtn} ux-hover-btn ux-focus-ring`}>
                                     {dict.hero.download_pdf}
                                 </a>
-                                <a href={book.downloadEpubUrl} download className={styles.printBtn}>
+                                <a href={book.downloadEpubUrl} download className={`${styles.printBtn} ux-hover-btn ux-focus-ring`}>
                                     {dict.hero.download_epub}
                                 </a>
                             </>
                         ) : (
                             <>
-                                <a href={book.amazonKindleUrl} target="_blank" rel="noopener noreferrer" className={styles.buyBtn}>
+                                <a href={book.amazonKindleUrl} target="_blank" rel="noopener noreferrer" className={`${styles.buyBtn} ux-hover-btn ux-focus-ring`}>
                                     {dict.hero.buy_kindle}
                                 </a>
-                                <a href={book.amazonPrintUrl} target="_blank" rel="noopener noreferrer" className={styles.printBtn}>
+                                <a href={book.amazonPrintUrl} target="_blank" rel="noopener noreferrer" className={`${styles.printBtn} ux-hover-btn ux-focus-ring`}>
                                     {dict.hero.buy_print}
                                 </a>
                             </>
                         )}
                     </div>
                     <button
-                        className={styles.moreBtn}
+                        className={`${styles.moreBtn} ux-hover-btn ux-focus-ring`}
                         onClick={() => setIsExpanded(!isExpanded)}
                         aria-expanded={isExpanded}
                     >
@@ -80,7 +80,7 @@ export default function BookCard({ book, dict, lang }: BookCardProps) {
                                     href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className={styles.teaserLink}
+                                    className={`${styles.teaserLink} ux-hover-btn ux-focus-ring`}
                                 >
                                     ▶ {dict.hero.watch_teaser}
                                 </a>
