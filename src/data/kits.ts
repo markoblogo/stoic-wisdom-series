@@ -31,7 +31,7 @@ export const freeKits: FreeKit[] = [
     description:
       'An entry point into Chinese wisdom texts in toki pona with visual plates and reading prompts.',
     pdfUrl: '/assets/kits/chineseKit.pdf',
-    teaserUrl: 'https://youtu.be/2eTLmbfBuxI',
+    teaserUrl: 'https://youtu.be/BOVyG1jP580',
     coverImage: '/assets/kits/chineseCover.svg',
     promoImage: '/assets/kits/chinesePromo.svg',
   },
